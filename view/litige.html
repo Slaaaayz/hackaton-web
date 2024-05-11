@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+        <div class="main_pages">
+            <a href="/">Suivre mon colis</a>
+            <a href="/FAQ">FAQ</a>
+            <a href="/litige">Politique de litige</a>
+            <a href="/contact">Nous contacter</a>
+            {{if .Connected}}
+            <a href="/admin">Espace admin</a>
+            <a href="/deco">Déconnexion</a>
+            {{else}}
+            {{end}}
+        </div>
+   </header>
+
+    <div class="mainContact">
+        <h1>Politique de litige</h1>
+        <div class="containerContact">
+            <div class="textContact">
+                Nous nous efforçons de fournir des livraisons de haute qualité et un service client exceptionnel. 
+                Cependant, si vous rencontrez un problème avec votre commande, veuillez nous contacter dès que possible pour résoudre le problème.
+                Les litiges seront traités de manière juste et rapide. 
+                Nous examinerons chaque cas individuellement et prendrons les mesures appropriées pour résoudre le problème dans les meilleurs délais.
+                Pour toute question ou préoccupation concernant notre politique de litige/retour, n'hésitez pas regarder la <a href="/FAQ">FAQ</a>.
+            </div>
+        </div>
+    </div>
+    <script async data-id="7645733362" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+</body>
+</html>
